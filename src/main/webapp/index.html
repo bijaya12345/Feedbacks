@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Feedback Screen</title>
+</head>
+<body>
+	<div align="left">
+		<h1>Feel Free to provide feedbacks</h1>
+		<form action="feedback/save" method="post">
+
+			Rating: <Select name="rating">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</Select><br /> 
+			Instructor name: <input type="text" name="user" /><br /> 
+			Your comments:<br>
+			<textarea name="feedback" rows="20" cols="100"></textarea> <br/>
+			
+			<input type="submit" value="submit" />
+		</form>
+	</div>
+</body>
+</html>
